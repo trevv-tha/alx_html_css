@@ -1,0 +1,364 @@
+/* ============ GLOBAL RESET ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #071629; /* dark blue background from prototype */
+}
+
+/* ============ HEADER & NAV ============ */
+header {
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 30px 80px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img {
+  width: 160px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #C271FF; /* accent color in prototype */
+}
+
+/* ============ HERO SECTION ============ */
+main > section:first-of-type {
+  background: url(Object.png) center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 120px; /* to avoid header overlap */
+}
+
+main > section:first-of-type h1 {
+  font-size: 120px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+main > section:first-of-type span {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 8px;
+}
+
+main > section:first-of-type button {
+  margin-top: 35px;
+  background: #C271FF;
+  color: #fff;
+  border: none;
+  padding: 16px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+main > section:first-of-type button:hover {
+  background: #a155cc;
+}
+
+/* ============ LEARN FROM THE PROS ============ */
+main > section:first-of-type > div:nth-of-type(2) {
+  margin-top: 90px;
+  text-align: center;
+}
+
+main > section:first-of-type > div:nth-of-type(2) h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+main > section:first-of-type > div:nth-of-type(2) h2::first-letter {
+  color: #C271FF;
+}
+
+main > section:first-of-type > div:nth-of-type(2) > div {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+main > section:first-of-type > div:nth-of-type(2) > div div {
+  text-align: center;
+}
+
+main > section:first-of-type > div:nth-of-type(2) img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid #C271FF;
+}
+
+main > section:first-of-type > div:nth-of-type(2) h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+main > section:first-of-type > div:nth-of-type(2) p {
+  font-size: 14px;
+  color: #D0D0D0;
+}
+
+/* ============ TESTIMONIAL SECTION ============ */
+main > section:nth-of-type(2) {
+  background: #C271FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px 120px;
+}
+
+main > section:nth-of-type(2) img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+main > section:nth-of-type(2) blockquote {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+main > section:nth-of-type(2) h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+main > section:nth-of-type(2) p {
+  font-size: 14px;
+}
+
+/* ============ MOST POPULAR TUTORIALS ============ */
+main > section:nth-of-type(3) {
+  background: #fff;
+  color: #071629;
+  text-align: center;
+  padding: 100px 80px;
+}
+
+main > section:nth-of-type(3) h2 {
+  font-size: 32px;
+  margin-bottom: 80px;
+}
+
+main > section:nth-of-type(3) h2::first-letter {
+  color: #C271FF;
+}
+
+main > section:nth-of-type(3) > div {
+  display: inline-block;
+  background: #fff;
+  border-radius: 10px;
+  width: 240px;
+  margin: 0 20px 50px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: left;
+}
+
+main > section:nth-of-type(3) > div img:first-of-type {
+  width: 100%;
+  display: block;
+}
+
+main > section:nth-of-type(3) h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+main > section:nth-of-type(3) p {
+  font-size: 14px;
+  margin: 0 15px 10px;
+}
+
+main > section:nth-of-type(3) > div > div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+main > section:nth-of-type(3) > div > div:nth-of-type(2) img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+main > section:nth-of-type(3) > div > div:nth-of-type(3) {
+  display: flex;
+  margin: 0 15px;
+  gap: 5px;
+  color: #C271FF;
+}
+
+main > section:nth-of-type(3) > div > p:last-of-type {
+  text-align: right;
+  margin: 10px 15px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* ============ FREE MEMBERSHIP ============ */
+main > section:nth-of-type(4) {
+  background: #071629;
+  text-align: center;
+  padding: 100px 80px;
+}
+
+main > section:nth-of-type(4) h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+main > section:nth-of-type(4) h2::first-letter {
+  color: #C271FF;
+}
+
+main > section:nth-of-type(4) > div {
+  display: inline-block;
+  width: 200px;
+  margin: 0 20px 40px;
+}
+
+main > section:nth-of-type(4) img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+main > section:nth-of-type(4) h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+main > section:nth-of-type(4) p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+main > section:nth-of-type(4) button {
+  margin-top: 40px;
+  background: #C271FF;
+  color: #fff;
+  border: none;
+  padding: 16px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+main > section:nth-of-type(4) button:hover {
+  background: #a155cc;
+}
+
+/* ============ FAQ SECTION ============ */
+main > section:nth-of-type(5) {
+  background: #fff;
+  color: #071629;
+  padding: 100px 120px;
+}
+
+main > section:nth-of-type(5) h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+main > section:nth-of-type(5) > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+main > section:nth-of-type(5) h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+main > section:nth-of-type(5) p,
+main > section:nth-of-type(5) div > div > div:nth-of-type(2) {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background: #071629;
+  color: #fff;
+  padding: 40px 120px;
+}
+
+footer section > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 150px;
+}
+
+footer i {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer i:hover {
+  color: #C271FF;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+  color: #aaa;
+}
