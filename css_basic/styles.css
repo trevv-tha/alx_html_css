@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    border: 1px;
+    padding: 10px
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    border-top: none;
+    border-bottom: none;
+}
+
+article{
+    flex: 2;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+}
+
+aside{
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+footer{
+    border-top: 1px solid #ccc;
+    text-align: center;
+
+}
